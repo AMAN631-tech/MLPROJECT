@@ -19,9 +19,3 @@ class CustomException(Exception):
         return self.error_message
 
 
-if __name__ == "__main__":
-    try:
-        a = 10 / 0   # deliberately cause a ZeroDivisionError
-    except Exception as e:
-        logging.info('Divided by zero error occurred')
-        raise CustomException(e, sys)
