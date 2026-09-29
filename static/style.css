@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: cornsilk;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 500px;
+    max-width: 90%;
+    margin: 60px auto;              /* was 150px, so the form fits on screen */
+    padding: 40px;
+    text-align: center;
+    background-color: rgb(188, 189, 176);
+    border-radius: 10px;
+}
+
+h1 {
+    color: #333333;
+    margin-top: 0;
+}
+
+p {
+    color: #000;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ---------- FORM ---------- */
+
+form {
+    display: flex;
+    flex-direction: column;         /* stack every field vertically */
+    gap: 8px;                       /* space between items */
+    text-align: left;               /* labels align to the left */
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    margin-top: 8px;
+}
+
+select,
+input[type="number"] {
+    width: 100%;                    /* every field the same width */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: white;
+    box-sizing: border-box;         /* keeps padding inside the 100% width */
+}
+
+select:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #000;
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #333;
+}
+
+/* ---------- RESULT BOX ---------- */
+
+.result {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.result h2 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+/* ---------- START PAGE BUTTON (index.html) ---------- */
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #333;
+}
